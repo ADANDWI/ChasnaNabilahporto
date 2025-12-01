@@ -1,0 +1,381 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* === COVER SECTION === */
+.cover {
+  background: url('office-bg.jpg') no-repeat center center / cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+.cover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 0;
+}
+
+.cover .container {
+  position: relative;
+  z-index: 2;
+}
+
+.profile-photo {
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.sub-title {
+  letter-spacing: 1.5px;
+  color: #00a8ff;
+}
+
+.title-portfolio {
+  font-size: clamp(3rem, 8vw, 7rem);
+  color: #4bb0ff;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.year {
+  font-size: 1.5rem;
+  vertical-align: super;
+}
+
+.name-tag {
+  display: inline-block;
+  background: linear-gradient(90deg, #00b4ff, #0046d1);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Arrow Button */
+.btn-next {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background: transparent;
+  border: none;
+  color: #007bff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-next:hover {
+  transform: translateX(6px);
+}
+
+/* === ABOUT SECTION === */
+.about {
+  background: #f8f8f8;
+  position: relative;
+}
+
+.handwriting {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.circle-bg {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: #2da9ff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.about-photo {
+  max-width: 260px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    text-align: center;
+  }
+
+  .circle-bg {
+    width: 260px;
+    height: 260px;
+  }
+
+  .about-photo {
+    max-width: 220px;
+  }
+}
+/* === EDUCATION SECTION === */
+.education {
+  background: #f4faff;
+}
+.edu-sidebar {
+  background: #4bb0ff;
+}
+.edu-logo {
+  border-radius: 8px;
+  object-fit: contain;
+}
+.edu-content {
+  border-left: 6px solid #4bb0ff;
+}
+
+/* === EXPERIENCE === */
+
+.experience {
+  background: #ffffff;
+}
+
+.experience .handwriting {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #222;
+  text-align: center;
+}
+
+.exp-card {
+  border-left: 4px solid #4bb0ff;
+  transition: transform 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+}
+
+.exp-img {
+  transition: transform 0.3s ease;
+}
+
+.exp-img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .handwriting {
+    font-size: 2rem;
+  }
+
+  .exp-card {
+    border-left-width: 3px;
+  }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .edu-content {
+    border-left: none;
+    border-top: 5px solid #4bb0ff;
+  }
+  .experience .handwriting {
+    text-align: center;
+  }
+}
+ section {
+      padding: 60px 0;
+    }
+    h2.section-title {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #007bff;
+    }
+    .portfolio-img {
+      border-radius: 12px;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .card-custom {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card-custom:hover {
+      transform: translateY(-5px);
+    }
+    .list-dot li {
+      margin-bottom: 6px;
+    }
+    .blue-accent {
+      color: #007bff;
+      font-weight: 600;
+    }
+  .org-card {
+  border-left: 4px solid #4bb0ff;
+  transition: transform 0.3s ease;
+}
+
+.org-card:hover {
+  transform: translateY(-5px);
+}
+
+.org-img {
+  transition: transform 0.3s ease;
+}
+
+.org-img:hover {
+  transform: scale(1.05);
+}
+
+.list-dot {
+  padding-left: 18px;
+}
+
+.list-dash {
+  padding-left: 28px;
+  color: #555;
+}
+
+.blue-accent {
+  color: #1464c5;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .org-card {
+    border-left-width: 3px;
+  }
+}
+.ach-card {
+  border-left: 4px solid #4bb0ff;
+  transition: transform 0.3s ease;
+  background: #ffffff;
+}
+
+.ach-card:hover {
+  transform: translateY(-5px);
+}
+
+.ach-img {
+  transition: transform 0.3s ease;
+}
+
+.ach-img:hover {
+  transform: scale(1.05);
+}
+
+.list-dot {
+  padding-left: 18px;
+}
+
+.blue-accent {
+  color: #1464c5;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .ach-card {
+    border-left-width: 3px;
+  }
+}
+/* Wrapper card */
+.org-card {
+    background: #ffffff;
+    border-radius: 15px;
+    transition: 0.3s ease;
+  }
+
+  .org-img-wrapper {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .org-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.35s ease;
+    pointer-events: none;
+    font-size: 1.1rem;
+  }
+
+  .org-img-wrapper.active .org-overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .list-dot li {
+    margin-bottom: 6px;
+  }
+.bg-sky{
+  background:#5bb6e6;
+}
+
+.section-title{
+  font-size:2.5rem;
+  font-weight:600;
+  color:#fff;
+}
+
+/* FRAME HP (DIAM) */
+.phone-frame{
+  width:260px;
+  height:520px;
+  background:#000;
+  border-radius:40px;
+  padding:12px;
+  position:relative;
+  box-shadow:0 25px 60px rgba(0,0,0,.4);
+}
+
+/* SPEAKER HP */
+.phone-frame::before{
+  content:"";
+  position:absolute;
+  top:8px;
+  left:50%;
+  transform:translateX(-50%);
+  width:70px;
+  height:6px;
+  background:#222;
+  border-radius:10px;
+}
+
+/* LAYAR HP */
+.phone-screen{
+  width:100%;
+  height:100%;
+  border-radius:30px;
+  overflow:hidden;
+  background:#fff;
+}
+
+/* GAMBAR DI DALAM LAYAR */
+.phone-screen img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .phone-frame{
+    width:220px;
+    height:460px;
+  }
+}
